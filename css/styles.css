@@ -10272,6 +10272,14 @@ body {
   max-width: 20rem;
   font-size: 1.5rem;
 }
+@media (max-width: 472px) {
+    .masthead h1 {
+        font-weight: 600 !important;
+    }
+    .masthead h2 {
+        font-weight: 500 !important;
+    }
+}
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
@@ -10343,6 +10351,19 @@ body {
 }
 a.icon {
     color: inherit;
+    transition: color 0.25s;
+}
+a.icon:hover {
+    color: rgb(225, 225, 225, 0.9);
+    transition: color 0.25s;
+}
+
+#FM_show_link:hover, #RSI_show_link:hover {
+    color: rgb(255, 255, 255, 0.65) !important;
+    transition: color 0.25s;
+}
+#FM_show_link, #RSI_show_link {
+    transition: color 0.25s;
 }
 
 .collapse, .collapsing {
